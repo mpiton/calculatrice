@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculatrice</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <table>
+            <tr>
+                <td colspan="5">
+                    <input type="text" id="ecran" value="0" size="10" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="calculer('ch', 7)">7</button></td>
+                <td><button class="btn" onclick="calculer('ch', 8)">8</button></td>
+                <td><button class="btn" onclick="calculer('ch', 9)">9</button></td>
+                <td><button class="btn" onclick="calculer('sp', 'c')">C</button></td>
+                <td><button class="btn" onclick="calculer('sp', 'ce')">CE</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="calculer('ch', 4)">4</button></td>
+                <td><button class="btn" onclick="calculer('ch', 5)">5</button></td>
+                <td><button class="btn" onclick="calculer('ch', 6)">6</button></td>
+                <td><button class="btn" onclick="calculer('op', '+')">+</button></td>
+                <td><button class="btn" onclick="calculer('op', '-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="calculer('ch', 1)">1</button></td>
+                <td><button class="btn" onclick="calculer('ch', 2)">2</button></td>
+                <td><button class="btn" onclick="calculer('ch', 3)">3</button></td>
+                <td><button class="btn" onclick="calculer('op', 'x')">x</button></td>
+                <td><button class="btn" onclick="calculer('op', '/')">/</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="btn gbtn" onclick="calculer('ch', 0)">0</button></td>
+                <td><button class="btn" onclick="calculer('dec')">,</button></td>
+                <td colspan="2"><button class="btn gbtn" onclick="calculer('eg', '')">=</button></td>
+            </tr>
+        </table>
+        
+        <script src="js/app.js"></script>
+    </body>
+</html>
